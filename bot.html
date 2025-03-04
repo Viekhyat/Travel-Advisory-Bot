@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <link rel="stylesheet" href="bot.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Live The World</h1>
+        <ul class="nav-links">
+            <li><a href="/home_user/home.html">Home</a></li>        
+            <li><a href="/currence_convertor/Currency.html">Currency Convertor</a></li>
+            <li><a href="/Travel Advisory/advisory.html">Prepare & Travel</a></li>
+            <li><a href="/SKYHULK HOTEL/index.html">Book a Hotel</a></li>
+            <li><a href="/contact-us/src/main/resources/static/contact-Us.html">Contact Us</a></li>
+        </ul>
+        <h3>Your AI Travel Assistant</h3>
+    </header>
+    
+    <main>
+        <div class="chat-container">
+            <div class="chat-header">
+                <img src="/airline logo.jpg" alt="Chatbot Avatar" class="avatar">
+                <h2>ATLAS</h2>
+            </div>
+            <div class="chat-box" id="chat-box">
+                <!-- Messages will appear here -->
+            </div>
+            <div class="input-container">
+                <input type="text" id="user-input" placeholder="Type your message..." oninput="toggleSendButton()">
+                <button id="send-button" onclick="sendMessage()" disabled>Send</button>
+                <button id="clear-button" onclick="clearChat()">Clear</button>
+            </div>
+        </div>
+    </main>
+    
+    <script src="bot.js"></script>
+</body>
+</html>
